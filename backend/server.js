@@ -33,7 +33,7 @@ const swaggerOptions = {
       },
       servers: [
         {
-          url: 'http://localhost:3000',
+          url: 'http://localhost:3002',
         },
       ],
     },
@@ -408,5 +408,5 @@ app.get('/api/employees', authenticateToken,async (req, res)=>{
  *       bearerFormat: JWT
  */
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -21,7 +21,7 @@ function EmployeeList() {
         try{
             const token=getToken()
             const res =await fetch(
-                `http://localhost:3000/api/employees?page=${page}&limit=10`,{
+                `http://localhost:3002/api/employees?page=${page}&limit=10`,{
                     headers:{
                         Authorization: `Bearer ${token}`,
                     },

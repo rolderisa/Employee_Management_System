@@ -22,7 +22,7 @@ function EmployeeForm() {
         const token=getToken()
 
         try{
-            const res=await fetch('http://localhost:3000/api/employees',{
+            const res=await fetch('http://localhost:3002/api/employees',{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json',
@@ -59,7 +59,10 @@ function EmployeeForm() {
     }
 
     return (
+
+      
         <Card className='w-full max-w-2xl'>
+          
             <CardHeader>
                 <CardTitle>
                     Add New Employee
